@@ -1,0 +1,23 @@
+Para esta actividad hice un árbol binario. A diferencia de las pilas, las colas y las listas enlazadas que 
+vimos antes, donde los datos van uno detrás de otro, aquí los datos se 
+organizan como una jerarquía: hay un nodo arriba (la raíz) y de él van saliendo los demás. En un árbol
+ binario cada nodo puede tener máximo dos hijos, uno a la izquierda y otro a la derecha.
+
+Primero creé la clase Nodo. Cada nodo guarda un dato y
+ dos referencias, izquierdo y derecho, que empiezan en None porque al principio el nodo no está conectado con 
+ nadie. Después fui enlazando los nodos asignando esas referencias. Algo importante que aprendí es que siempre
+  hay que guardar la variable raiz, porque si la pierdes ya no puedes llegar al resto del árbol.
+
+El árbol que armé funciona así: la raíz es A, y de ella 
+salen B a la izquierda y C a la derecha. B tiene dos hijos, D y E, mientras que C solo tiene uno, F, 
+que está a su derecha. Entonces A, B y C son nodos internos, y D, E y F son las hojas.
+
+Para saber si un nodo es hoja, reviso que sus dos referencias 
+sean None, o sea que no tiene hijos. Eso lo hace la función es_hoja, y la función hojas recorre todo
+ el árbol y me devuelve cuáles son. También hice la función mostrar, que imprime el árbol con espacios
+  según el nivel para que se vea la forma, y recorrer, que pasa por todos los nodos usando recursión:
+   primero el nodo, luego su lado izquierdo y después el derecho.
+
+Por último probé tres casos para ver que funcionara bien: un árbol vacío,
+ un árbol con un solo nodo (que es la raíz y a la vez una hoja) y un árbol con varios nodos y niveles.
+  En los tres el programa corrió sin errores y lo que salió en pantalla coincide con mi diagrama.
