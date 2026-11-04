@@ -50,7 +50,7 @@ raiz.izquierdo = Nodo("B")
 raiz.derecho = Nodo("C")
 raiz.izquierdo.izquierdo = Nodo("D")
 raiz.izquierdo.derecho = Nodo("E")
-raiz.derecho.derecho = Nodo("F")   # C solo tiene hijo derecho
+raiz.derecho.derecho = Nodo("F")  
 
 mostrar(raiz)
 print("Recorrido:")
